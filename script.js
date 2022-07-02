@@ -1,16 +1,17 @@
-const form = document.getElementById('some-form')
+// const form = document.getElementById('some-form')
+const button = document.getElementById('buttonModalPerfil')
 
 
-form.addEventListener('submit', e => {
- e.preventDefault()
- const values = Array.from(document.querySelectorAll("#some-form input")).reduce((acc, input)=>({...acc,[input.id]: input.value}), {});
+button.addEventListener('click', e => { 
+e.preventDefault() 
+const values = Array.from(document.querySelectorAll("#some-form input")).reduce((acc, input)=>({...acc,[input.id]: input.value}), {});
 console.log("Os valores do FORM", values)
 
 
  let mockadoDadosDoForm ={
- "A1": "1",
+ "A1": "111",
  "B2": "4",
- "C3": "3",
+ "C3": "9",
  "D4": "5",
  "A5": "4",
  "B6": "1",
@@ -43,39 +44,31 @@ arrayD = []
 console.log("essa array ta zuada", arrayA)
 
 // ----- Somar os valores dentro de cada array
- const sumA = arrayA.reduce((accumulator, value) => {
-    return accumulator + value;
-  }, 0);
+ somadaPesquisa = {
+     "ColunaA" :arrayA.reduce((accumulator, value) => { return accumulator + value;}, 0),
+     "ColunaB" :arrayB.reduce((accumulator, value) => { return accumulator + value;}, 0),
+     "ColunaC" :arrayC.reduce((accumulator, value) => {return accumulator + value;}, 0),
+     "ColunaD" :arrayD.reduce((accumulator, value) => {return accumulator + value; }, 0)
+ }
 
-  const sumB = arrayB.reduce((accumulator, value) => {
-    return accumulator + value;
-  }, 0);
-  const sumC = arrayC.reduce((accumulator, value) => {
-    return accumulator + value;
-  }, 0);
-  const sumD = arrayD.reduce((accumulator, value) => {
-    return accumulator + value;
-  }, 0);
 
-  console.log(sumA, sumB, sumC, sumD)
-  
-  // ----- Identifico qual valor é maior q que grupo é
-if(sumA >= sumB){
-   return "grupo A é maior "
-}else{
-   return "grupo B é maior"
+  console.log(somadaPesquisa)
+//-----entender esse reduce-- coloquei coluna A e B e tá percorrendo tudo
+  const mairroNumero= Object.keys(somadaPesquisa).reduce((ColunaA, ColunaB) => somadaPesquisa[ColunaA] > somadaPesquisa[ColunaB] ? ColunaA : ColunaB);
+
+  console.log(mairroNumero)
+
+// ---- mostrar um alert com o perfil encontrado
+
+mensagem()
+function mensagem(){
+   var botao = document.getElementById("p")
+   var text = document.createTextNode(`Seu perfil: ${mairroNumero}`)
+
+   botao.appendChild(text)
+   
+
 }
-
-if(sumC >= sumD){
-   return "grupo A é maior "
-}else{
-   return "grupo B é maior"
-}
-
-
-
-
-
 
 
 })
