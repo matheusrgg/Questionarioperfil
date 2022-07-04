@@ -13,18 +13,65 @@
   </head>
   <body>
 
+  <h1><strong>Faça o teste:você é assertivo?</strong></h1>  
+
+<h3>
+  Teste de consultora do Instituto MVC diz quala seu perfil profissional
+
+Confira o teste desenvolvido pela consultora de Gestão em Pessoas e Negócios do 
+Instituto MVC.</br>
+</h3>
+
+<p>
+
+  NEste teste para medir sua assertividade, fazemos um
+  cruzamento entre 4 tipos de comportamento e as 
+  notas que voce se atribui quando precisa um destes
+  comportamentos.Funciona dessa maneira</br>
+</p>
+
+<p>
+
+  Nos quadrinhos cinza, em cada pergunta, de uma nota a voce mesmo de 0 a 5,</br></br>
+  0 = Nunca ou Muito diferente de Mim;e</br>
+  5 = Sempre ou Exatamente Como EU</br>
+  
+  As notas de 1 a 4 correspondem 
+</p>
+
 
     <!--COMECO MODAL PERFIIL-->
     <div class="modal" id="demoModal">
       <div class="modal-dialog">
         <div class="modal-content">
+
           <div class="modal-header">
-            <p id="p">This is some text</p>
-            <h1 class="modal-title">Plase Confirm</h1>
+            <h1 id="p" class="modal-title"></h1>
+       
             <button type="button" class="close"></button>
           </div> 
           <div class="modal-body">
-            <p>This is the modal body, do you like it?</p>
+            <p>Quanto maior a sua nota em cada uma das colunas, mais propenso você será para apresentar um determinado</br></br>
+              ESTILO DE COMPORTAMENTO, em que:</br></br>
+              <strong>  PASSIVO </strong>- Ansioso por evitar confronto. Evita abordagem direta. Abre mão dos seus direitos pelo outro (cede
+              facilmente). Muito preocupado com aprovação social. Justificação excessiva. Pouco contato visual/atitude
+              defensiva.</br>
+              <strong> AGRESSIVO </strong>- Ansioso por vencer, mesmo à custa do outro. Faz abordagens diretas, mas sem tato (habilidade)
+              com o outro. Faz valer apenas os seus direitos e ignora os do outro. Culpa os outros e usa sarcasmo para ´ganhar´ a
+              situação. Máximo contato visual/ voz alta/atitude agressiva.</br>
+              <strong>ASSERTIVO</strong> - Busca defender seus desejos, sem ignorar os dos outros.Faz abordagem direta, mas exprimindo
+              respeito pela pessoa. Ouve e procura entender a perspectiva do outro. Aceita acordos e soluções integradoras. Expõe
+              claramente suas posições, opiniões e sentimentos. Sua auto-estima está acima de sua preocupação por aprovação
+              social.</br>
+              <strong>PASSIVO/ASSERTIVO</strong> - Apresenta um comportamento misto, com elementos de agressividade e passividade.
+              Ansioso por acertar as contas sem correr riscos de confronto. Dá respostas indiretas/sarcasmo. Mínimo contato
+              visual / postura fechada.
+              </br></br>
+              Não se esqueça de que o comportamento é situacional, ou seja, podemos modificá-lo de acordo com as situações
+              que o ambiente nos apresenta. No entanto, é natural que tenhamos uma determinada tendência, que corresponde ao
+              nosso padrão mais usual, influenciada por diversos aspectos da nossa personalidade e do nosso próprio controle
+              sobre as emoções. Por isso, não encare o resultado como ´rótulo´, mas como uma tendência, que pode ser reforçada
+              ou modificada de acordo com seus objetivos pessoais!</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary">Confirm</button>
@@ -38,72 +85,203 @@
     <p>Enter some text in the fields below, and then press the "Submit form" button to submit the form.</p>
     <form id="some-form" class="">
       
-        <table>
+        <table class="col-12">
         <tr>
-          <th>Pergunta</th>
-          <th>A</th>
-          <th>B</th>
-          <th>C</th>
-          <th>D</th>
+          <th class="col-8">Pergunta</th>
+          <th class="col-1">A</th>
+          <th class="col-1">B</th>
+          <th class="col-1">C</th>
+          <th class="col-1">D</th>
         </tr>
-        <tr>
-          <td>Prefiro quando as pessoas advinhem meu desejo</td>
+        <tr >
+          <td> 1 - Quando enfrento alguém sobre determinado problema, sinto-me
+            bastante constrangido.</td>
           <td> <input type='text' id="A1" /></td>
           <td><input type='text' id="tres" disabled/></td>
           <td><input type='text' id="tres" disabled/></td>
           <td><input type='text' id="tres" disabled/></td>
         </tr>
         <tr>
-          <td>Procuro resolver os problemas diretamente?</td>
-          <td> <input type='text' id="tres" disabled/></td>
-          <td><input type='text' id="B2" /></td>
-          <td><input type='text' id="tres" disabled/></td>
-          <td><input type='text' id="tres" disabled/></td>
+          <td>2 - Permaneço calmo e confiante ao defrontar-me com sarcasmo,
+            escárnio ou críticas ofensivas.</td>
+            <td> <input type='text' id="A1" disabled/></td>
+            <td><input type='text' id="tres" disabled/></td>
+            <td><input type='text' id="tres" /></td>
+            <td><input type='text' id="tres" disabled/></td>
         </tr>
         <tr>
-          <td>Perco a calma falcilmente?</td>
-          <td> <input type='text' id="tres" disabled/></td>
+          <td>3 - Perco a calma facilmente.</td>
+          <td> <input type='text' id="A1" disabled/></td>
+          <td><input type='text' id="tres" /></td>
           <td><input type='text' id="tres" disabled/></td>
-          <td><input type='text' id="C3" /></td>
           <td><input type='text' id="tres" disabled/></td>
         </tr>
 
         <tr>
-          <td>é mais importante pra mim obter o que eu desejo do que conquistar a simpatia</td>
-          <td> <input type='text' id="tres" disabled/></td>
+          <td>4 - Procuro resolver os problemas diretamente, sem culpar ou julgar os
+            outros.
+            </td>
+            <td> <input type='text' id="A1" disabled/></td>
           <td><input type='text' id="tres" disabled/></td>
-          <td><input type='text' id="A4" disabled/></td>
-          <td><input type='text' id="D4" /></td>
+          <td><input type='text' id="tres" disabled/></td>
+          <td><input type='text' id="tres" /></td>
         </tr>
         <tr>
-            <td>Prefiro quando as pessoas advinhem meu desejo</td>
-            <td> <input type='text' id="A5" /></td>
+            <td>5 - Acho certo pedir o que desejo ou expor meus sentimentos.</td>
+            <td> <input type='text' id="A1" disabled/></td>
             <td><input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="tres" disabled/></td>
-          </tr>
-          <tr>
-            <td>Procuro resolver os problemas diretamente?</td>
-            <td> <input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="B6" /></td>
-            <td><input type='text' id="tres" disabled/></td>
+            <td><input type='text' id="tres"/></td>
             <td><input type='text' id="tres" disabled/></td>
           </tr>
           <tr>
-            <td>Perco a calma falcilmente?</td>
-            <td> <input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="C7" /></td>
-            <td><input type='text' id="tres" disabled/></td>
+            <td>6 - Sinto-me à vontade quanto ao grau de contato visual que estabeleço
+              com outras pessoas e creio que elas também sentem o mesmo.</td>
+              <td> <input type='text' id="A1" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" /></td>
+              <td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>7 - Sinto-me facilmente constrangido pelo ridículo ou sarcasmo.</td>
+            <td> <input type='text' id="A1" /></td>
+          <td><input type='text' id="tres" disabled/></td>
+          <td><input type='text' id="tres"disabled /></td>
+          <td><input type='text' id="tres" disabled/></td>
           </tr>
   
           <tr>
-            <td>é mais importante pra mim obter o que eu desejo do que conquistar a simpatia</td>
-            <td> <input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="tres" disabled/></td>
-            <td><input type='text' id="A4" disabled/></td>
-            <td><input type='text' id="D8" /></td>
+            <td>
+              8 - É mais importante obter o que desejo do que conquistar a simpatia
+              das pessoas.</td>
+              <td> <input type='text' id="A1"disabled /></td>
+              <td><input type='text' id="tres" /></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
           </tr>
+          
+          <tr>
+            <td>
+              9 Prefiro mil vezes quando as pessoas adivinham meus desejos.</td>
+              <td> <input type='text' id="A1" /></td>
+              <td><input type='text' id="tres"disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+              10 - Confio em minha habilidade de resolver satisfatoriamente a maioria
+              das situações de trabalho que envolvem confronto com outras
+              pessoas.
+              </td>
+              <td> <input type='text' id="A1" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" /></td>
+              <td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+             
+11 - Elevarei o tom de voz ou usarei de olhares ofensivos ou sarcasmo
+para conseguir o que desejo.</td>
+<td> <input type='text' id="A1" disabled/></td>
+<td><input type='text' id="tres" /></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+           
+12 - Usarei de sarcasmo ou piadas para afirmar meu ponto de vista..</td>
+<td> <input type='text' id="A1" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" /></td>
+          </tr>
+          <tr>
+            <td>
+              13 - Paciência não é o meu forte.</td>
+              <td> <input type='text' id="A1" disabled/></td>
+              <td><input type='text' id="tres" /></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+              14 - Conquistar a simpatia das pessoas é o mais importante para mim,ainda que, algumas vezes, precise, para isso, ?comprar? sua
+              colaboração.
+              </td>
+              <td> <input type='text' id="A1" /></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+              <td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+            
+15 - Detesto confrontos e farei tudo que estiver ao meu alcance para
+evitá-los.</td>
+<td> <input type='text' id="A1" /></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+         
+16 - Realmente não gosto de confrontos. Usarei, então, de outros meios
+para manifestar meus sentimentos, tais como observações
+?cortantes? ou manifestações de impaciência.</td>
+<td> <input type='text' id="A1" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" /></td>
+          </tr>
+          <tr>
+            <td>
+       
+
+17 - Posso não ser muito direto com as pessoas, mas elas conseguem
+perceber o que penso a respeito delas só de olhar para mim.</td>
+<td> <input type='text' id="A1" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" /></td>
+          </tr>
+          <tr>
+            <td>
+              18 - É fácil para mim, agredir ou apontar o dedo indicador para as
+              pessoas.</td>
+              <td> <input type='text' id="A1" /></td>
+          <td><input type='text' id="tres" disabled/></td>
+          <td><input type='text' id="tres" disabled/></td>
+          <td><input type='text' id="tres" disabled/></td>
+          </tr>
+          <tr>
+            <td>
+         
+
+
+19 - Manifesto impaciência em relação aos outros através de expressão
+corporal.
+</td>
+<td> <input type='text' id="A1" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" /></td>
+          </tr>
+          <tr>
+            <td>
+        
+20 - Se for solicitado a fazer algo que não queira, ainda assim atenderei
+o pedido, mas, propositalmente, não o farei bem quanto poderia.
+</td>
+<td> <input type='text' id="A1" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" disabled/></td>
+<td><input type='text' id="tres" /></td>
+          </tr>
+        
+
     </table>
         <button
         id="buttonModalPerfil"
@@ -114,6 +292,33 @@
         >Save</button>
  
       </form>
+
+      <h3>Analise dos Resultados</h3>
+      <p>As letras de cada coluna correspodem aos seguintes estilos de comportamento</p>
+
+      <h4>Coluna A = Passivo</h4>
+      <h4>Coluna B = Agressivo</h4>
+      <h4>Coluna C = Assertivo</h4>
+      <h4>Coluna D = Passivo/Agressivo</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <script type="text/javascript" src="script.js">
     
       </script>
